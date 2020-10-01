@@ -2,9 +2,9 @@ import requests
 import json
 import random
 
-# UEL of open triva database
-#n=int(input("Enter number of questions :"))
-url='https://opentdb.com/api.php?amount=10&category=15'
+# UrL of open triva database
+n=int(input("Enter number of questions :"))
+url='https://opentdb.com/api.php?amount='+'str(n)'+'&category=15'
 
 #get the given url into json_obje
 json_obj = requests.get(url)
